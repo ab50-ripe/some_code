@@ -7,5 +7,12 @@ pipeline {
       }
     }
 
+    stage('buildit') {
+      steps {
+        sh '''chmod +x ./testscript.sh
+./testscript.sh'''
+      }
+    }
+
   }
 }
